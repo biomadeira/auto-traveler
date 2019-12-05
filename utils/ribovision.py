@@ -57,6 +57,9 @@ def visualise_lsu(fasta_input, output_folder, rnacentral_id, model_id):
     os.system(cmd)
     adjust_font_size(result_base)
 
+    final_stk = result_base + '.stk'
+    os.system('cp %s %s' % temp_stk.name, final_stk)
+
     temp_fasta.close()
     temp_sto.close()
     temp_stk.close()
