@@ -448,7 +448,7 @@ def visualise_rfam(fasta_input, output_folder, seq_id, model_id):
     os.system(cmd)
 
     final_stk = result_base + '.stk'
-    os.system('cp %s %s' % temp_stk.name, final_stk)
+    os.system('cp %s %s' % (temp_stk.name, final_stk))
 
     temp_fasta.close()
     temp_sto.close()
